@@ -1,0 +1,1 @@
+module.exports.Cachegrinder = require('./dist/Cachegrinder').Cachegrinder;

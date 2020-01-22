@@ -1,0 +1,46 @@
+{
+  "name": "cachegrind-reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gulp dev",
+    "test": "nodemon --watch dist --watch test/index.js --watch out.twig --exec babel-node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4MIND/cachegrind-reader.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-transform-flow-comments": "^7.4.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.0",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.2",
+    "babel-plugin-add-jsdoc-properties": "^0.1.4",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-inline-json-import": "^0.3.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean": "^0.4.0",
+    "nodemon": "^1.19.3",
+    "twig": "^1.14.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M4MIND/cachegrind-reader/issues"
+  },
+  "homepage": "https://github.com/M4MIND/cachegrind-reader#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
+}
