@@ -1,45 +1,25 @@
-import {Info} from "./Info"
-
 export class Collection {
 	constructor() {
-		this._node = [];
-		this._file = [];
-		this._info = new Info();
+		this._callable = []
 	}
 
-	get node() {
-		return this._node
+	get callable() {
+		return this._callable
 	}
 
-	get file() {
-		return this._file
+	set callable(value) {
+		this._callable = value
 	}
 
-	get info() {
-		return this._info
+	getCallable(id) {
+		return this.callable[parseInt(id) - 1];
 	}
 
-	addNode(fn) {
-		this.node.push(fn);
+	hasCallable(id) {
+		return !!this.callable[parseInt(id) - 1];
 	}
 
-	hasNode(id) {
-		return !!this.node[id - 1];
-	}
-
-	getNode(id) {
-		return this.node[id - 1] || null
-	}
-
-	addFile(file) {
-		this.file.push(file);
-	}
-
-	hasFile(id) {
-		return !!this.file[id - 1];
-	}
-
-	getFile(id) {
-		return this.file[id - 1] || null
+	setCallable(callable) {
+		this.callable.push(callable);
 	}
 }
